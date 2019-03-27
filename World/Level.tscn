@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Props/Cube.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+
+[node name="Root" type="Spatial"]
+
+[node name="Cube" parent="." instance=ExtResource( 1 )]
+transform = Transform( 3.08125, 0, 0, 0, 1, 0, 0, 0, 1, 1.47747, -1.03399, -0.00189688 )
+
+[node name="Cube2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 2.5909, 0.504119, 0, -1.51236, 0.863634, 0, 0, 0, 1, 7.02946, -2.72224, 0.0307055 )
+
+[node name="Cube4" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.90227, 0.773259, 0, -2.31978, 0.634091, 0, 0, 0, 1, 11.5968, -6.76247, 0.0307055 )
+
+[node name="Cube5" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.888539, 0.955132, 0, -2.8654, 0.29618, 0, 0, 0, 1, 14.2178, -11.6734, 0.021911 )
+
+[node name="Cube10" parent="." instance=ExtResource( 1 )]
+transform = Transform( 2.99956, 0.0171404, 0, -0.0514211, 0.999853, 0, 0, 0, 1, 18.727, -14.4549, 0.021911 )
+
+[node name="Cube3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 117.148, -0.422618, 0, 54.6269, 0.906307, 0, 0, 0, 1, -118.317, -55.5414, -0.0111809 )
+
+[node name="Cube6" parent="." instance=ExtResource( 1 )]
+transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 13, 3, 0 )
+
+[node name="Cube13" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1.40444, 0, -4.09266e-008, 0, 1, 0, 2.62268e-007, 0, -1, 26.6862, -8.58752, -3.93403e-007 )
+
+[node name="Cube16" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1.40444, 0, -4.09266e-008, 0, 1, 0, 2.62268e-007, 0, -1, 33.5345, -2.61909, -3.93403e-007 )
+
+[node name="Cube17" parent="." instance=ExtResource( 1 )]
+transform = Transform( 6.13899e-008, 1, 1.78896e-015, 1.40444, -4.37114e-008, 4.09266e-008, 2.62268e-007, 0, -1, 27.2634, -0.777786, -3.93403e-007 )
+
+[node name="Cube7" parent="." instance=ExtResource( 1 )]
+transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, 0 )
+
+[node name="Cube12" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1.40444, 0, -4.09266e-008, 0, 1, 0, 2.62268e-007, 0, -1, 24.8136, -10.5875, -4.37115e-008 )
+
+[node name="Cube15" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1.40444, 0, -4.09266e-008, 0, 1, 0, 2.62268e-007, 0, -1, 31.6619, -4.61909, -4.37115e-008 )
+
+[node name="Cube19" parent="." instance=ExtResource( 1 )]
+transform = Transform( 6.13899e-008, 1, 1.78896e-015, 1.40444, -4.37114e-008, 4.09266e-008, 2.62268e-007, 0, -1, 25.2634, 1.0948, -4.37115e-008 )
+
+[node name="Cube8" parent="." instance=ExtResource( 1 )]
+transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 22, -1, 0 )
+
+[node name="Cube11" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1.40444, 0, -4.09266e-008, 0, 1, 0, 2.62268e-007, 0, -1, 22.4728, -12.5875, 3.93402e-007 )
+
+[node name="Cube14" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1.40444, 0, -4.09266e-008, 0, 1, 0, 2.62268e-007, 0, -1, 29.3212, -6.61909, 3.93402e-007 )
+
+[node name="Cube18" parent="." instance=ExtResource( 1 )]
+transform = Transform( 6.13899e-008, 1, 1.78896e-015, 0.18311, -5.69908e-009, 5.33599e-009, 2.62268e-007, 0, -1, 29.2667, 0.000186801, 3.93402e-007 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+

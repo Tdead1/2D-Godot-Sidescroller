@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+
+code = "shader_type spatial;
+varying flat vec3 our_color;
+
+void vertex() {
+    our_color = COLOR.rgb;
+}
+
+void fragment() {
+    ALBEDO = our_color;
+}"
+
+[resource]
+
+shader = SubResource( 1 )
+
