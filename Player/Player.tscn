@@ -8,6 +8,7 @@
 
 [sub_resource type="CapsuleShape" id=2]
 
+margin = 0.001
 radius = 0.3
 height = 2.4
 

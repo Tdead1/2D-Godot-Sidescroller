@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Props/Cube.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemies/CutterDrone.tscn" type="PackedScene" id=3]
+
+[sub_resource type="BoxShape" id=1]
+
+margin = 0.001
+extents = Vector3( 300, 300, 0.1 )
 
 [node name="Root" type="Spatial"]
 
@@ -9,7 +15,7 @@
 transform = Transform( 3.08125, 0, 0, 0, 1, 0, 0, 0, 1, 1.47747, -1.03399, -0.00189688 )
 
 [node name="Cube2" parent="." instance=ExtResource( 1 )]
-transform = Transform( 2.5909, 0.504119, 0, -1.51236, 0.863634, 0, 0, 0, 1, 7.02946, -2.72224, 0.0307055 )
+transform = Transform( 2.95606, 0.536375, 0, -1.87867, 0.84398, 0, 0, 0, 1, 6.98005, -2.75489, 0.0307055 )
 
 [node name="Cube4" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1.90227, 0.773259, 0, -2.31978, 0.634091, 0, 0, 0, 1, 11.5968, -6.76247, 0.0307055 )
@@ -60,5 +66,22 @@ transform = Transform( -1.40444, 0, -4.09266e-008, 0, 1, 0, 2.62268e-007, 0, -1,
 transform = Transform( 6.13899e-008, 1, 1.78896e-015, 0.18311, -5.69908e-009, 5.33599e-009, 2.62268e-007, 0, -1, 29.2667, 0.000186801, 3.93402e-007 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1738, -2.56833, 0 )
+
+[node name="LevelWallBack" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+
+[node name="LevelWallBack" type="CollisionShape" parent="LevelWallBack"]
+transform = Transform( 1, 0, 1.78814e-007, 0, 1, -1.49012e-008, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="LevelWallFront" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+
+[node name="LevelWallBack" type="CollisionShape" parent="LevelWallFront"]
+transform = Transform( 1, 0, 1.78814e-007, 0, 1, -1.49012e-008, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Scene Root" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.48737, 0, 0 )
 

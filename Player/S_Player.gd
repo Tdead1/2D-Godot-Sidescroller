@@ -79,15 +79,14 @@ func _physics_process(delta):
 		movement.x = clamp(movement.x, -15, 15);
 		movement.y = clamp(movement.y, -30, 30);
 		movement = move_and_slide(Vector3(movement.x, movement.y, 0.0), Vector3(0, 1, 0), true);
-		
 	else:
 		velocity.y = 0;
 		acceleration.x = 0;
 		movement = velocity + acceleration;
-		print(velocity);
 		movement.x = clamp(movement.x, -15, 15);
 		movement.y = clamp(movement.y, -30, 30);
 		movement = move_and_slide(Vector3(movement.x, movement.y, 0.0), Vector3(0, 1, 0), false);
 	
+	#print(velocity);
 	velocity = Vector2(movement.x, movement.y);
 	pass;
